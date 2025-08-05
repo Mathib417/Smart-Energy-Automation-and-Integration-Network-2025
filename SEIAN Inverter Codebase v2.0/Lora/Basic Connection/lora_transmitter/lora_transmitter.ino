@@ -18,6 +18,8 @@ void setup() {
     while (true); // Halt
   }
 
+  LoRa.setSyncWord(0x02);  // Match with Raspberry Pi receiver
+  
   Serial.println("LoRa init succeeded.");
 }
 
